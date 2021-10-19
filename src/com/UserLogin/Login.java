@@ -31,7 +31,7 @@ class UserService {
         if(username.length()<6 || username.length()>14){
             throw new UserLoginException("注册失败！用户名必须大于6位或者小于14位");
         }else {
-            System.out.println("注册成功！");
+            System.out.println("注册成功！!!!!!");
         }
     }
 }
