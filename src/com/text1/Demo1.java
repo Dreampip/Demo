@@ -14,7 +14,7 @@ public class Demo1 {
 //        提供无参数构造和有参数构造
 //        提供一个生病方法：ill()，在该方法中打印信息，例如：张三，男，29岁生病了
 class People{
-    private String name;//姓名
+    private String name;
     private Integer age;//年龄
     private Integer sex;//1是男 0是女
 
