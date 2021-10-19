@@ -14,15 +14,12 @@ package com.UserLogin;
 import java.util.Scanner;
 
 public class Login {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws UserLoginException {
         Scanner i = new Scanner(System.in);
         UserService userService = new UserService();
         System.out.println("请输入用户名和密码：");
-        try {
             userService.register(i.next(), i.next());
-        } catch (UserLoginException e) {
-            e.printStackTrace();
-        }
+
     }
 }
 class UserService {
@@ -31,7 +28,7 @@ class UserService {
         if(username.length()<6 || username.length()>14){
             throw new UserLoginException("注册失败！用户名必须大于6位或者小于14位");
         }else {
-            System.out.println("注册成功！!!!!!");
+            System.out.println("注册成功！");
         }
     }
 }
